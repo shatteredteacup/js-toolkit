@@ -23,10 +23,10 @@ export const range = (bound: number): number[] => {
   return rangeArr;
 };
 
-export const replaceElements = <T>(
+export const replaceUsWithWhen = <T>(
   array: T[],
+  replacement: any,
   predicate: (element: T) => boolean,
-  replacement: any
 ) => {
   const newArr = [];
   for (const element of array) {
